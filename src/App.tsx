@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ClassComponent from "./components/ClassComponent";
 import FilterComponent from "./components/FilterComponent";
 import { Student } from "./components/interface";
+import Dashboard from "./components/Dashboard";
 
 
 
@@ -32,8 +33,8 @@ const App: React.FC = () => {
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
       <h1>School Database</h1>
 
-     
-
+      {/* Dashboard Component */}
+      <Dashboard students={students} />
       {/* Filter Component */}
       <FilterComponent students={students} onFilter={handleFilter} />
 
